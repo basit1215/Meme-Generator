@@ -42,16 +42,16 @@ const Meme = async() => {
                 <div key={item.id}>
                     <Image
                     src={item.url}
-                    alt={item.name}
+                    alt='meme'
                     width={200}
                     height={200}
                     />
                     <p>{item.name}</p>
                     <Link href={{
-                        pathname: "createMeme/",
+                        pathname: "generateMeme",
                         query:{
                             url: item.url,
-                            id: item.id,
+                            id: item.id
 
                         }
                     }}>Generate Meme</Link>
